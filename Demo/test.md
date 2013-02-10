@@ -1,11 +1,5 @@
-# A proof of a simple identity:
+Let's evaluate this indefinite integral:
 
-## Theorem:
+$$\int \cos^2(x)+\sin^2(x)dx$$
 
-$$2^n=\sum_{i=0}^n{n\choose i}$$
-
-## Proof:
-
-This is simple to obtain once we notice that $2^n=(1+1)^n$. We can then simply use the expansion of the binomial formula:
-
-$$(a+b)^n=\sum_{i=0}^n{n\choose i}a^ib^{n-i}$$
+Using basic trigonometry we know that $\cos^2(x)+\sin^2(x)=1$ so our integral is simply $x+C$ for some constant $C$.
