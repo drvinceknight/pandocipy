@@ -16,8 +16,8 @@ This directory contains a simple python script that will take all markdown files
 
 # Usage
 
-    pandocipy.py
-    pandocipy.py -i [List of File to Ignore]
+    pandocipy.py [Target Directory]
+    pandocipy.py [Target Directory] -i [List of File to Ignore]
 
 # License Information
 This work is licensed under a [Creative Commons Attribution-ShareAlike 3.0](http://creativecommons.org/licenses/by-sa/3.0/us/) license.  You are free to:

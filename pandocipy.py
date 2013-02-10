@@ -24,15 +24,16 @@ directory = "./"
 if len(arguments) > 0 and arguments[0] != "-i":
     directory += arguments[0]
 
-print directory
-
 markdown_files = [e[:-3] for e in os.listdir(directory) if ".md" in e]
 for e in markdown_files:
     if e in files_to_ignore:
         markdown_files.remove(e)
 
-print markdown_files
 for e in markdown_files:
+    print "\nWorking on ", e
     os.system("pandoc " + directory + e + ".md -o " + directory + e + ".pdf")
+    print "\t %s.pdf created" % e
     os.system("pandoc " + directory + e + ".md -o " + directory + e + ".html --webtex")
+    print "\t %s.html created" % e
     os.system("pandoc " + directory + e + ".md -o " + directory + e + ".docx")
+    print "\t %s.docx created" % e
