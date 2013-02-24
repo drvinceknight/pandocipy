@@ -31,7 +31,7 @@ for e in markdown_files:
 
 for e in markdown_files:
     print "\nWorking on ", e
-    os.system("pandoc " + directory + e + ".md -o " + directory + e + ".pdf")
+    os.system("pandoc " + directory + e + ".md -o " + directory + e + ".pdf --latex-engine=xelatex")
     print "\t %s.pdf created" % e
     os.system("pandoc " + directory + e + ".md -o " + directory + e + ".html --webtex")
     print "\t %s.html created" % e
